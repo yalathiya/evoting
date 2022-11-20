@@ -1,74 +1,99 @@
 import React from "react";
+import VotingApp from "../VotingApp.jsx";
 import {
   MDBBtn,
   MDBContainer,
+  MDBCard,
+  MDBCardBody,
+  MDBCardImage,
   MDBRow,
   MDBCol,
+  MDBIcon,
   MDBInput,
 } from "mdb-react-ui-kit";
 
-function LoginCard() {
+function App() {
   return (
-    <MDBContainer className="my-5 gradient-form">
-      <MDBRow>
-        <MDBCol col="6" className="mb-5">
-          <div className="d-flex flex-column ms-5">
-            <div className="text-center">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
-                style={{ width: "185px" }}
-                alt="logo"
+    <MDBContainer className="my-5">
+      <MDBCard>
+        <MDBRow className="g-0">
+          <MDBCol md="6">
+            <MDBCardImage
+              src="https://ecisveep.nic.in/uploads/monthly_2018_06/NRI-Young-Voters.jpg.631f671cbff911f5638ed8af3157e7b6.jpg"
+              alt="login form"
+              className="rounded-start w-100"
+            />
+          </MDBCol>
+
+          <MDBCol md="6">
+            <MDBCardBody className="d-flex flex-column">
+              <div className="d-flex flex-row mt-2">
+                <MDBCardImage
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/84/Government_of_India_logo.svg"
+                  //   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKEJLhX9PQJDi09UhpbbRC90svUZLmTWmtMQH4pLCLZnnrMgrrCkdcSrqG3zrj7Co4fG4&usqp=CAU"
+                  alt="Govt of India"
+                  fas
+                  height="120"
+                />
+
+                <span className="h1 fw-bold mb-0"> </span>
+              </div>
+
+              <h5
+                className="fw-normal my-4 pb-3"
+                style={{ letterSpacing: "1px" }}
+              >
+                Sign into your account
+              </h5>
+
+              <MDBInput
+                wrapperClass="mb-4"
+                label="Voter Id Number"
+                id="formControlLg"
+                type="email"
+                size="lg"
               />
-              <h4 className="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
-            </div>
+              <MDBInput
+                wrapperClass="mb-4"
+                label="Password"
+                id="formControlLg"
+                type="password"
+                size="lg"
+              />
 
-            <p>Please login to your account</p>
-
-            <MDBInput
-              wrapperClass="mb-4"
-              label="Email address"
-              id="form1"
-              type="email"
-            />
-            <MDBInput
-              wrapperClass="mb-4"
-              label="Password"
-              id="form2"
-              type="password"
-            />
-
-            <div className="text-center pt-1 mb-5 pb-1">
-              <MDBBtn className="mb-4 w-100 gradient-custom-2">Sign in</MDBBtn>
-              <a className="text-muted" href="#!">
+              <MDBBtn
+                // onClick=
+                // href="App.js"
+                className="mb-4 px-5"
+                color="dark"
+                size="lg"
+              >
+                Vote Now
+              </MDBBtn>
+              <a className="small text-muted" href="#!">
                 Forgot password?
               </a>
-            </div>
-
-            <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
-              <p className="mb-0">Don't have an account?</p>
-              <MDBBtn outline className="mx-2" color="danger">
-                Danger
-              </MDBBtn>
-            </div>
-          </div>
-        </MDBCol>
-
-        <MDBCol col="6" className="mb-5">
-          <div className="d-flex flex-column  justify-content-center gradient-custom-2 h-100 mb-4">
-            <div className="text-white px-3 py-4 p-md-5 mx-md-4">
-              <h4 class="mb-4">We are more than just a company</h4>
-              <p class="small mb-0">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+              <p className="mb-5 pb-lg-2" style={{ color: "#393f81" }}>
+                Don't have an account?{" "}
+                <a href="##" style={{ color: "#393f81" }}>
+                  Register here
+                </a>
               </p>
-            </div>
-          </div>
-        </MDBCol>
-      </MDBRow>
+
+              <div className="d-flex flex-row justify-content-start">
+                <a href="#!" className="small text-muted me-1">
+                  Terms of use.
+                </a>
+                <a href="#!" className="small text-muted">
+                  Privacy policy
+                </a>
+              </div>
+            </MDBCardBody>
+          </MDBCol>
+        </MDBRow>
+      </MDBCard>
     </MDBContainer>
   );
 }
 
-export default LoginCard;
+export default App;

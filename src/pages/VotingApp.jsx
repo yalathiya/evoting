@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import VotingCard from "./components/VotingCard";
-import teamsJson from "./lib/teams.json";
-import "./assets/scss/styles.scss";
+import VotingCard from "./VotingCard.jsx";
+import teamsJson from "../lib/teams.json";
+import "../assets/scss/styles.scss";
 import "bootstrap/dist/css/bootstrap.css";
 
 function VotingApp() {

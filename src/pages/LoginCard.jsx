@@ -1,5 +1,6 @@
 import React from "react";
-import VotingApp from "../VotingApp.jsx";
+import { Outlet, Link } from "react-router-dom";
+import VotingApp from "./VotingApp.jsx";
 import {
   MDBBtn,
   MDBContainer,
@@ -61,6 +62,7 @@ function App() {
                 size="lg"
               />
 
+              <Link to="/">VOTE</Link>
               <MDBBtn
                 // onClick=
                 // href="App.js"

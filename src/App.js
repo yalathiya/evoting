@@ -1,7 +1,7 @@
-import VotingApp from "./VotingApp";
-import NavbarCard from "./components/NavbarCard.jsx";
-import LoginCard from "./components/LoginCard";
-import FooterCard from "./components/FooterCard";
+import VotingApp from "./pages/VotingApp";
+import NavbarCard from "./pages/NavbarCard.jsx";
+import LoginCard from "./pages/LoginCard";
+import FooterCard from "./pages/FooterCard.jsx";
 const App = () => {
   document.title = `E-Voting`;
   return (

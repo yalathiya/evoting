@@ -40,7 +40,7 @@ export default function FooterCard() {
 
       <div className="">
         <section className="">
-          <div className="">
+          <div className="videos">
             <iframe
               width="500"
               height="280"
@@ -50,6 +50,7 @@ export default function FooterCard() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
+
             <iframe
               width="500"
               height="280"
@@ -59,6 +60,7 @@ export default function FooterCard() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
+
             <iframe
               width="500"
               height="280"

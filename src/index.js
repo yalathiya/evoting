@@ -32,7 +32,9 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          {/* <Route index element={<Layout />} /> */}
+          {/* 
+            
+          <Route index element={<Layout />} /> */}
           <Route path="FooterCard" element={<FooterCard />} />
           <Route path="LoginCard" element={<LoginCard />} />
           <Route path="NavbarCard" element={<NavbarCard />} />

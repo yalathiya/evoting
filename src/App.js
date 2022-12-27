@@ -9,9 +9,9 @@ const App = () => {
   return (
     <>
       {/* <NavbarCard /> */}
-      <LoginCard />
+      {/* <LoginCard /> */}
       {/* <VotingApp /> */}
-      <FooterCard />
+      {/* <FooterCard /> */}
     </>
   );
 };

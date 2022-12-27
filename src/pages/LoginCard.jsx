@@ -63,7 +63,7 @@ function App() {
               />
 
               {/* <Link to="/">VOTE</Link> */}
-              <Link to="/VotingApp">mm</Link>
+              <Link to="/VotingApp">Link to Vote</Link>
               <MDBBtn
                 // onClick=
                 // href="App.js"

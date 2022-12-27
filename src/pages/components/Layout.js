@@ -4,6 +4,14 @@ import VotingApp from "../VotingApp";
 import NavbarCard from "../NavbarCard.jsx";
 import LoginCard from "../LoginCard";
 import FooterCard from "../FooterCard.jsx";
+
+// const Layout = () => {
+//   return (
+//     <>
+//       <Link to="/">Home</Link>
+//     </>
+//   );
+// };
 const Layout = () => {
   document.title = `E-Voting`;
   return (

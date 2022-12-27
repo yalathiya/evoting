@@ -9,6 +9,7 @@ function VotingCard(props) {
       <Card.Img variant="top" src={team.logo} />
       <Card.Body>
         <Card.Title>{team.name}</Card.Title>
+        <Card.Title>{team.candidate}</Card.Title>
         <Button variant="success" onClick={() => incrementVoteCount(team._id)}>
           Vote
         </Button>

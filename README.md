@@ -5,6 +5,6 @@ This web app is prepared for only learning purpose, It includes some concepts of
 Team Leader : Khushi Joshi
 
 Team Members : 
-1 - Krupali Pthava
+1 - Krupali Pithava
 2 - Radhika Sonagara
 3 - Yash Lathiya
